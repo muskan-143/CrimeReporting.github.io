@@ -1,0 +1,6 @@
+/* for nav bar  */
+
+#navBar {
+    display: flex;
+    justify-content: center;
+}

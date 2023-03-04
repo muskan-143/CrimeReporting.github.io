@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Accept/Reject Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        .radio-group {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+        
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        
+        textarea {
+            resize: none;
+            margin-bottom: 10px;
+        }
+        
+        .btn {
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Accept/Reject Form</h2>
+        <form id="myForm">
+            <label for="request">Request:</label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <input type="hidden" id="request" name="request" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+            <label for="response">Response:</label>
+            <div class="radio-group">
+                <input type="radio" id="accept" name="response" value="accept">
+                <label for="accept">Accept</label>
+                <input type="radio" id="reject" name="response" value="reject">
+                <label for="reject">Reject</label>
+            </div>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="5" placeholder="Enter comment (optional)"></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const form = document.getElementById('myForm');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const request = form.elements['request'].value;
+            const response = form.elements['response'].value;
+            const comment = form.elements['comment'].value;
+            console.log('Request:', request);
+            console.log('Response:', response);
+            console.log('Comment:', comment);
+            // Submit form data to server or perform other actions
+        });
+    </script>
+</body>
+
+</html>

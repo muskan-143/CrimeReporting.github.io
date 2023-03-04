@@ -1,0 +1,98 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+#displayMessage {
+    height: 80px;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.7)url('../images/sinupImage.jpg');
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    opacity: 0.8;
+} */
+
+
+/* making the margin and padding 0 */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* changing the background color of the whole body  */
+
+body {
+    background-color: #202023;
+}
+
+body::after {
+    /* background-color: #1c1f24; */
+    /* opacity: 0.8; */
+    content: "";
+    height: 100vh;
+    background-image: url('../../images/registerBackgroundImage3.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.8; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    /* padding: 42%; */
+    /* filter: alpha(opacity=0.4); */
+}
+
+
+/* For making the card in the center of the page */
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 40rem; */
+    margin-top: 3rem;
+    opacity: 0.7;
+    padding: 2rem;
+}
+
+
+/* for boxShadow  */
+
+#card {
+    box-shadow: rgb(12 16 18) 0.9rem 0.9rem 0.2rem;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    width: 25rem;
+    /* text-align: center; */
+}
+
+
+/* For adjusting the login input and label  */
+
+.userBtn {
+    background-color: black;
+    border-width: 0.1rem;
+    border-radius: 2rem;
+    border-color: #8499bc;
+    color: white;
+    width: 5rem;
+    height: 2.5rem;
+}
+
+.userBtn:hover {
+    transform: scale(1.2);
+}

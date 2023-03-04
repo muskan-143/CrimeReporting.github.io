@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    /* overflow: hidden; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* For changing the background color of the nav bar as use bootstrap hence need to use root. */
+
+
+/* body {
+    background-color: antiquewhite;
+} */
+
+:root {
+    --bs-dark-rgb: 255, 00, 00;
+}
+
+.navbar-nav {
+    --bs-nav-link-color: rgb(255 247 247);
+}
+
+
+/* Applying the font family to entire webpage */
+
+
+/* Background image of the webpage */
+
+#backgroundImage {
+    /* width: 100%; */
+    padding-top: 45%;
+    background: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 22rem;
+}
+
+
+/* Text on the image  */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    top: 45%;
+    margin-left: 32%;
+    font-size: x-large;
+}
+
+#dropDownList {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 30px;
+    align-items: center;
+}
+
+
+/* For navBar of the webpage  */
+
+#navBar {
+    top: 0px;
+    position: sticky;
+    background-color: black;
+    color: white;
+}
+
+
+/* navBar button design  */
+
+#navigationLoginBtn {
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+}
+
+#navigationLoginBtn:hover {
+    background-color: white;
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
+/* Login for the user, police and admin */
+
+.loginBox {
+    width: 500px;
+    height: 461px;
+    border: 3px solid white;
+    margin-left: 12px;
+    padding: 2%;
+}
+
+#adminImage {
+    height: 348px;
+    width: 350px;
+}
+
+#policeImage {
+    height: 348px;
+    width: 400px;
+}
+
+#userImage {
+    height: 348px;
+    width: 350px;
+}
+
+.loginBtn {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    margin-left: 140px;
+    width: 100px;
+    border-radius: 21px;
+    height: 45px;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+
+/* Footer design  */
+
+#foot {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#footer {
+    background-color: black;
+}
+
+
+/* For making the images visible and not to float the text. */
+
+.introSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 550px;
+    color: white;
+    font-size: 25px;
+}
+
+.introSection::before {
+    content: '';
+    /* background-image: url(../images/backgroundImage3.jpg); */
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 45.8rem;
+    opacity: 0.8;
+    width: 100%;
+    z-index: -2;
+    /* opacity: 0.5;*/
+}
+
+.text-over-img {
+    z-index: 1;
+    font-size: 1.2em;
+    margin-top: -100px;
+}
+
+.fontStyle {
+    color: black;
+    text-align: justify;
+}
+
+
+/* Scrolling navbar */
+
+.pa-fixed-header {
+    background-color: #0b1d37 !important;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+}
+
+.text-black {
+    color: cyan !important;
+}
+
+#card1 {
+    background-color: aliceblue;
+}
+
+#card2 {
+    background-color: aliceblue;
+}
+
+#card3 {
+    background-color: aliceblue;
+}
+
+#card4 {
+    background-color: aliceblue;
+}
+
+#card3,
+#card4 {
+    margin-bottom: 2rem;
+}
+
+#card1:hover {
+    background-color: rgb(207, 236, 236);
+    transform: scale(1.2);
+}
+
+#card2:hover {
+    background-color: rgb(207, 214, 236);
+    transform: scale(1.2);
+}
+
+#card3:hover {
+    background-color: rgb(207, 236, 236);
+    transform: scale(1.2);
+}
+
+#card4:hover {
+    background-color: rgb(207, 236, 236);
+    transform: scale(1.2);
+}
